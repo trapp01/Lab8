@@ -11,6 +11,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomListTest {
     private CustomList list;
@@ -52,6 +53,14 @@ public class CustomListTest {
         cityList.addCity(city);
         cityList.delete(city);
         Assert.assertEquals(0, cityList.getCities().size());
+    }
+
+    @Test
+    public void testCountCities(){
+        CustomList cityList = MockCityList();
+        City city = new City("Yellowknife", "Northwest Territories");
+        cityList.addCity(city);
+        Assert.assertEquals(1, cityList.countCities());
     }
 
 }

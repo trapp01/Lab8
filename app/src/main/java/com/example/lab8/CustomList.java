@@ -74,12 +74,12 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      */
     public void delete(City city){
-//        if (hasCity(city)){
-//            cities.remove(city);
-//        }
-//        else{
-//            throw new RuntimeException("City specified not in list");
-//        }
+        if (hasCity(city)){
+            cities.remove(city);
+        }
+        else{
+            throw new RuntimeException("City specified not in list");
+        }
     }
 
     /**
