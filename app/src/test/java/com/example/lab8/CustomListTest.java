@@ -51,7 +51,7 @@ public class CustomListTest {
         City city = new City("Yellowknife", "Northwest Territories");
         cityList.addCity(city);
         cityList.delete(city);
-        Assert.assertEquals(1, cityList.getCities().size());
+        Assert.assertEquals(0, cityList.getCities().size());
     }
 
 }
