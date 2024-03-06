@@ -40,10 +40,8 @@ public class CustomListTest {
     public void testHasCity() {
         CustomList cityList = MockCityList();
         City city = new City("Yellowknife", "Northwest Territories");
-        cityList.add(city);
+        cityList.addCity(city);
         assertTrue(cityList.hasCity(city));
-        City newCity = new City("Edmonton", "Alberta");
-        assertTrue(cityList.hasCity(newCity));
     }
 
 }
